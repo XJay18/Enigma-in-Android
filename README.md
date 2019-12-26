@@ -7,6 +7,9 @@ This is an Android Enigma Simulator.
 # Screen shot
 ![home](home.png)
 
+# apk Download
+[generated apk (Oct 2019)](app/release)
+
 # How to use
 1. First, setting the five rotors here.
 
