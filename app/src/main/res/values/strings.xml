@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Enigma</string>
+    <string name="about">Welcome to the Enigma in Android.
+        This is the version 0.0.3 Enigma Android Simulator created by Jay Cao.\nThe
+        link of the project repo is available in the bottom line of this app.
+    </string>
+    <string name="github">https://github.com/XJay18/Enigma-in-Android</string>
+    <string name="title">Welcome to the Enigma in Android.\nHere are some useful tips for you:
+            You can choose a specific rotor from the given rotors for each of the five slots.
+        (i.e., choose an item from each drop-down box below `Setting`)
+        Then you can choose to give a more detailed setting by typing in the line of `IPs, ARs and
+        plugboard.` Note that IPs stands for initial positions while ARs stands for alphabet rings.
+        If you do not want to make the settings more complex, just
+        ignore that line.\n\nAfter you finish the settings, you can type your messages (any
+        characters from the 26 English letters in either upper case or lower case) in the first
+        frame with green border. Then, simply press `ENCODE`, and the encoded message will be
+        shown in the second green-border frame.\nThe last tip, you can press the encoded messages
+        to copy them into your clipboard.
+    </string>
+</resources>

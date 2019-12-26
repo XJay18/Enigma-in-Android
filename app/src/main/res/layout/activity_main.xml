@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/text"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        android:text="Settings:"
+        android:textColor="#229453"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_lla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_settings"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/sp_spa"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/sp_spb"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_llb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ll_lla"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/sp_spc"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/sp_spd"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/sp_spe"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_set"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/ll_llb"
+        android:layout_gravity="end"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-50dp"
+        android:hint="IPs, ARs and plugboard."
+        android:textColor="#229453" />
+
+    <LinearLayout
+        android:id="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logo"
+            android:fontFamily="monospace"
+            android:onClick="onClick"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_llc"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignTop="@id/tv_your_msg"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/input_frame"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_encoding"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="top"
+            android:hint="Please enter your message to be encode here."
+            android:maxLines="10"
+            android:paddingTop="5dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_llc"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-25dp"
+        android:fontFamily="monospace"
+        android:text="Encoded Messages:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_your_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/et_set"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-20dp"
+        android:fontFamily="monospace"
+        android:text="Your Messages:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_lld"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_alignBottom="@id/ll_llc"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-155dp"
+        android:background="@drawable/input_frame">
+
+        <TextView
+            android:id="@+id/tv_encoded"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:focusable="true"
+            android:fontFamily="monospace"
+            android:paddingTop="5dp"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_encode"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/ll_lld"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-40dp"
+        android:background="@drawable/confirm"
+        android:focusable="true"
+        android:onClick="onClick"
+        android:text="ENCODE"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/btn_encode"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-40dp"
+        android:background="@drawable/confirm"
+        android:focusable="true"
+        android:onClick="onClick"
+        android:text="ABOUT"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/github"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_about"
+        android:layout_marginBottom="-30dp" />
+</RelativeLayout>
